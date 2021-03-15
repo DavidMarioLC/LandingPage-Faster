@@ -33,7 +33,9 @@ html{
 body{
     margin: 0;
 }
-
+a{
+    text-decoration: none;
+}
 .nav,
 .login-button{
     display: none;
@@ -64,4 +66,114 @@ body{
 .icon-menu{
     height: 24px;
     width: 24px;   
+}
+/*hero section*/
+.hero{
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.hero__content{
+
+}
+.hero__description{
+
+}
+.hero__title{
+    margin: 0;
+    font-size: 2.8rem;
+    line-height: 3.9rem;
+    letter-spacing: 1%;
+    text-align: left;
+    font-family:'inter-bold';
+    color: var(--whiteColor);
+    padding-top: 3.5rem;
+}
+.hero__about{
+    margin: 2.4rem 0;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-family: 'inter-regular';
+    color: var(--grayColor);
+}
+.hero__button{
+    display: inline-block;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-family: 'inter-bold';
+    color: var(--whiteColor);
+    border:2px solid var(--whiteColor);
+    border-radius: 8px;
+    padding: 1.2rem 6.1rem;
+   
+}
+
+.hero__link{
+    display: block;
+    font-family: 'inter-regular';
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    color: var(--grayColor);
+    text-decoration: underline;
+    margin-top: 2.4rem;
+    margin-bottom: 5.7rem;
+    padding-bottom: 309px;
+}
+
+.hero__image{
+    text-align: center;
+   
+}
+.image-iphone{
+  position: fixed;
+  left: 5.0rem;
+  top: 500px;
+}
+/*responsive*/
+
+@media screen and (min-width:800px){
+.icon-menu{
+    display: none;
+}  
+.nav,
+.login-button{
+    display: block;
+  }
+
+.menu{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    min-width: 444px;
+}
+
+.menu__link{
+    display: block;
+    color: var(--whiteColor);
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: 'inter-bold';
+    padding: 2.4rem 2.4rem;
+    line-height: 2.8rem;
+  
+}
+.menu__item:nth-child(1){
+    border-bottom: 4px solid var(--whiteColor);
+}
+.menu__item:nth-child(n+2) > .menu__link{
+  color: var(--grayColor);
+}
+
+.login-button{
+    color: var(--blackColor);
+    background-color: var(--whiteColor);
+    font-family: 'inter-bold';
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    padding: .5rem 1.6rem;
+    border-radius: 8px;
+}
+
 }
