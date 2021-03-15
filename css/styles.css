@@ -1,0 +1,67 @@
+@font-face{
+    font-family: 'inter-regular';
+    src: url('../fonts/Inter-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'inter-bold';
+    src: url('../fonts/Inter-Bold.ttf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: 'inter-extraBold';
+    src: url('../fonts/Inter-ExtraBold.ttf');
+    font-style: normal;
+    font-weight: 800;
+}
+
+:root{
+    --blackColor:#000000;
+    --yellowColor:#FED941;
+    --grayColor:#808080;
+    --whiteColor:#FFFFFF;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+}
+
+.nav,
+.login-button{
+    display: none;
+}
+
+.header{
+    background-color: var(--blackColor);
+}
+
+.wrapper{
+    padding: 0 2.0rem;
+}
+
+.header__content{
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2.4rem;
+    font-family: 'inter-bold';
+    color: var(--whiteColor);
+  
+}
+
+.icon-menu{
+    height: 24px;
+    width: 24px;   
+}
