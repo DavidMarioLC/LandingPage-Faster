@@ -130,6 +130,7 @@ a{
   position: fixed;
   left: 5.0rem;
   top: 500px;
+  z-index: 2;
 }
 /*logos*/
 .logos__content{
