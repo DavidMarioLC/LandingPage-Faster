@@ -181,6 +181,10 @@ a{
 
 
 }
+.hero-package{
+    background-color: var(--blackColor);
+    height: 700px;
+}
 
 .hero-purchases__content{
 
@@ -200,6 +204,49 @@ a{
     font-size: 1.6rem;
     line-height: 2.2rem;
     color: var(--grayColor);
+}
+
+/*hero-package*/
+.hero-package{
+position: relative;
+
+}
+.hero-package__content{
+    
+}
+.hero-package__title{
+    margin: 0;
+    font-family: 'inter-bold';
+    font-size: 2.5rem;
+    line-height: 3.0rem;
+    letter-spacing: 1%;
+    color: var(--whiteColor);
+    padding-top: 6.4rem;
+}
+
+.hero-package__text{
+    font-family: 'inter-regular';
+    color: var(--whiteColor);
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-bottom: 4.0rem;
+}
+
+.wrapper-bar{
+    padding-left: 2.0rem;
+}
+
+.bar{
+    width: 100%;
+    height: 40px;
+    background-color: var(--grayLowColor);
+    border-radius: 100px 0 0 100px;
+}
+.bar-progress{
+    background-color:  #2FB464;
+    height: 40px;
+    width: 60%;
+    border-radius: 100px;
 }
 /*responsive*/
 
