@@ -130,7 +130,7 @@ a{
   position: fixed;
   left: 5.0rem;
   top: 500px;
-  z-index: 2;
+  z-index: 10;
 }
 /*logos*/
 .logos__content{
@@ -249,6 +249,108 @@ position: relative;
     width: 60%;
     border-radius: 100px;
 }
+
+/*login*/
+.login{
+
+}
+.login__content{
+
+}
+.login__info{
+
+}
+.login__title{
+    font-size: 2.5rem;
+    line-height: 3.0rem;
+    letter-spacing: 1%;
+    font-family: 'inter-bold';
+}
+.login__text{
+    font-family: 'inter-regular';
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+.login__avatar{
+text-align: center;
+}
+.login__avatar__img{
+    margin-top: 5.6rem; 
+    margin-bottom: 6.4rem;
+    display: inline-block;
+    width: 320px;
+    height: 320px;
+}
+
+/*clients*/
+.clients{
+    background-color: var(--grayLowColor);
+}
+.clients__title{
+    font-family: 'inter-bold';
+    font-size: 2.5rem;
+    line-height: 3.0rem;
+    letter-spacing: 1%;
+    text-align: center;
+    max-width: 270px;
+    margin: auto;
+    padding-top: 8.0rem;
+    color: #333333;
+}
+.clients__content{
+
+}
+.card{
+    padding: 32px;
+    border-radius: 8px;
+    background-color: var(--whiteColor);
+    box-shadow: 0px 0px 10px rgba(151, 148, 148, 0.651);
+    text-align: center;
+    position: relative;
+    margin-top: 13.0rem;
+}
+
+.card__avatar{
+    position: relative; 
+    top:-80px;
+    display: flex;
+    justify-content: center;
+}
+
+.card__avatar__image{
+    display: block;
+}
+
+.card__text{
+    margin: 0;
+    font-family: 'inter-regular';
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    text-align: center;
+    margin-bottom: 2.0rem;
+}
+
+.card__footer{
+    text-align: center;
+}
+
+.card__footer__username{
+    font-family: 'inter-bold';
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: var(--blackColor);
+    margin: 0;
+}
+
+.card__footer__tagname{
+    margin: 0;
+   font-family: 'inter-regular';
+   font-size: 1.8rem;
+   line-height: 2.7rem; 
+   color: var(--grayColor);
+}
+
+
 /*responsive*/
 
 @media screen and (min-width:800px){
