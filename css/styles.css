@@ -37,6 +37,10 @@ body{
 a{
     text-decoration: none;
 }
+ul{
+    padding: 0;
+    margin: 0;
+}
 .nav,
 .login-button{
     display: none;
@@ -285,6 +289,7 @@ text-align: center;
 /*clients*/
 .clients{
     background-color: var(--grayLowColor);
+    padding-bottom: 200px;
 }
 .clients__title{
     font-family: 'inter-bold';
@@ -351,6 +356,110 @@ text-align: center;
 }
 
 
+/*footer*/
+
+.footer{
+    background-color: var(--blackColor);
+    padding-bottom: 6.4rem;
+}
+
+.cta{
+    position: relative;
+    top: -80px;
+    border-radius: 8px;
+    padding: 2.4rem;
+    background-color: var(--whiteColor);
+    text-align: center;
+}
+.cta__title{
+    margin: 0;
+    font-size: 2.4rem;
+    font-family: 'inter-bold';
+    line-height: 3.0rem;
+}
+.cta__text{
+    font-family: 'inter-regular';
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-bottom: 2.4rem;
+    color: var(--grayColor);
+}
+
+
+.cta__button{
+    background-color: var(--blackColor);
+    color: var(--whiteColor);
+    font-family: 'inter-bold';
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    padding: 1.2rem 7.4rem;
+    border-radius: 8px;
+}
+
+.socials{
+  
+}
+.socials__logo{
+    color: var(--whiteColor);
+    font-family: 'inter-bold';
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    margin: 0;
+  
+}
+.socials__info{
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: var(--grayColor);
+    font-family: 'inter-regular';
+    margin: 0;
+
+}
+.icons{
+    margin-top: 2.8rem;
+   
+}
+.icons__link{
+    margin-right: 16px;
+}
+
+
+.products,.company{
+    margin-top: 6.4rem;
+  
+}
+
+.products__menu{
+    list-style: none;
+}
+
+.products__link:first-child{
+    font-weight: bold;
+    color: var(--whiteColor);
+}
+
+.products__link{
+    font-family: 'inter-regular';
+    color: var(--grayColor);
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+.company__menu{
+    list-style: none;
+}
+
+.company__link:first-child{
+    font-weight: bold;
+    color: var(--whiteColor);
+}
+
+.company__link{
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-family: 'inter-regular';
+    color: var(--grayColor);
+}
 /*responsive*/
 
 @media screen and (min-width:800px){
