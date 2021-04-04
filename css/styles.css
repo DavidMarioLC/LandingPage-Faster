@@ -41,12 +41,11 @@ ul{
     padding: 0;
     margin: 0;
 }
-.nav,
-.login-button{
-    display: none;
-}
 
 .header{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
     background-color: var(--blackColor);
 }
 
@@ -76,6 +75,49 @@ ul{
     height: 24px;
     width: 24px;   
 }
+.nav,
+.login-button{
+display: none;
+}
+
+.menu-mobile-hidden{
+    display: none;
+}
+.menu-mobile-show{
+    position: fixed;
+    z-index: 50;
+    display: block;
+    list-style: none;
+    background: #000000f8;
+    height: 300px;
+    width: 100vw;
+    left: 0;
+    top: 76px;
+    padding:2.0rem ;
+}
+
+
+
+.menu-mobile__link{
+    display: block;
+    padding: 1.6rem 0;
+    font-size: 1.8rem;
+    font-family: 'inter-bold';
+    color: var(--whiteColor);
+}
+
+.menu-mobile__item .login-button{
+    display: inline-block;
+    color: var(--blackColor);
+    background-color: var(--whiteColor);
+    font-family: 'inter-bold';
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    padding: .5rem 1.6rem;
+    border-radius: 8px;
+}
+
+
 /*hero section*/
 .hero{
     background-image: url('../images/background.png');
@@ -261,7 +303,7 @@ position: relative;
 /*login*/
 .login{
     position: relative;
-    z-index: 100;
+    z-index: 20;
     background-color: var(--whiteColor);
 }
 
@@ -294,7 +336,7 @@ text-align: center;
     background-color: var(--grayLowColor);
     padding-bottom: 200px;
     position: relative;
-    z-index: 100;
+    z-index: 20;
 }
 .clients__title{
     font-family: 'inter-bold';
@@ -363,7 +405,7 @@ text-align: center;
 
 .footer{
     position: relative;
-    z-index: 100;
+    z-index: 20;
     background-color: var(--blackColor);
     padding-bottom: 6.4rem;
 }
@@ -503,6 +545,11 @@ text-align: center;
 }
 
 @media screen and (min-width:1200px){
+
+.menu-mobile-hidden{
+        display: none;
+    }
+    
 .icon-menu{
     display: none;
 }  
@@ -560,7 +607,7 @@ text-align: center;
     padding-left: 470px;
     padding-top: 207px;
     display: flex;
-    padding-bottom: 207px;
+   
     padding-right: 211px;
     
 }
@@ -713,7 +760,7 @@ text-align: center;
     max-width: 100%;
 }
 .clients__content{
-    z-index:999;
+    z-index:20;
     width: 100%;
     overflow: scroll;
     overflow-y:hidden;
